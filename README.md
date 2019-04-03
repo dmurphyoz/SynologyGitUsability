@@ -141,16 +141,16 @@ chmod 500 ~gituser/git-shell-commands/git-create-repository
 
 10. check everything is okay in `~gituser`.
 
->bash-4.3# pwd
->/var/services/homes/gituser
->bash-4.3# ls -la git-shell-commands/
->total 12
->dr-xr-x--- 1 gituser users  90 Apr  4 01:07 .
->drwxr-xr-x 1 gituser users  86 Apr  3 21:39 ..
->-r-x------ 1 gituser users 835 Apr  3 23:04 git-create-repository
->-r-x------ 1 gituser users 304 Apr  4 01:07 help
->-r-x------ 1 gituser users 143 Apr  3 19:36 no-interactive-login
->bash-4.3# 
+> bash-4.3# pwd
+/var/services/homes/gituser
+bash-4.3# ls -la git-shell-commands/
+total 12
+dr-xr-x--- 1 gituser users  90 Apr  4 01:07 .
+drwxr-xr-x 1 gituser users  86 Apr  3 21:39 ..
+-r-x------ 1 gituser users 835 Apr  3 23:04 git-create-repository
+-r-x------ 1 gituser users 304 Apr  4 01:07 help
+-r-x------ 1 gituser users 143 Apr  3 19:36 no-interactive-login
+bash-4.3# 
 > 
 
 11. check the `/volume1/git` is ready. _I have recycle bin on but #recycle may not exist in your directory_
