@@ -10,9 +10,15 @@ Thank you to @walkerjeffd.
 
 **Ensure you also read about permissions** The notes regarding permissions are very important in current Synology builds (look at the notes by @gazgeek and @jerryfromearth).
 
-I did find it annoying needing to use the ssh to create new repositories and do settings. Also I normally have `admin` disabled, as a security measure and only reenable when required (DSM Control Panel).
+### However the usability needed improving
 
-git-shell has the ability to specify additional commands. This is how you enable that capability for the Synology and use it to create empty repository.
+I was finding it annoying needing to use ssh to login to the Synology and run several commands so that I could create new repositories and do settings. Also I normally have `admin` disabled, as a security measure and only reenable when required (DSM Control Panel) so it was extra tedious.
+
+To create `NewRepo.git` it could be as simple as running `ssh gituser@diskstation.local "git-create-repository NewRepo.git"` on your local machine.
+
+### This guide will show you how to setup repositories remotely with one command.
+
+**Note:** this uses fully supported features and should work through DSM upgrades and Git version updates. It uses an ability in git-shell to specify additional commands. This guide shows you how to do it and how to use it. Everything is designed around cut and paste.
 
 **For this to work the top level Git directory should be owned by the gituser**
 
@@ -118,6 +124,8 @@ exit 1
 fi
 cd $GIT_HOME
 exec git --bare init $NEW_REPO
+
+EOF
 ```
 
 9. Change the user and permission on all the scripts in `git-shell-commands` directory to be owned by `gituser` and have read and execute permission only.
@@ -133,16 +141,16 @@ chmod 500 ~gituser/git-shell-commands/git-create-repository
 
 10. check everything is okay in `~gituser`.
 
-> bash-4.3# pwd
-> /var/services/homes/gituser
-> bash-4.3# ls -la git-shell-commands/
-> total 12
-> dr-xr-x--- 1 gituser users  90 Apr  4 01:07 .
-> drwxr-xr-x 1 gituser users  86 Apr  3 21:39 ..
-> -r-x------ 1 gituser users 835 Apr  3 23:04 git-create-repository
-> -r-x------ 1 gituser users 304 Apr  4 01:07 help
-> -r-x------ 1 gituser users 143 Apr  3 19:36 no-interactive-login
-> bash-4.3# 
+>bash-4.3# pwd
+>/var/services/homes/gituser
+>bash-4.3# ls -la git-shell-commands/
+>total 12
+>dr-xr-x--- 1 gituser users  90 Apr  4 01:07 .
+>drwxr-xr-x 1 gituser users  86 Apr  3 21:39 ..
+>-r-x------ 1 gituser users 835 Apr  3 23:04 git-create-repository
+>-r-x------ 1 gituser users 304 Apr  4 01:07 help
+>-r-x------ 1 gituser users 143 Apr  3 19:36 no-interactive-login
+>bash-4.3# 
 > 
 
 11. check the `/volume1/git` is ready. _I have recycle bin on but #recycle may not exist in your directory_
