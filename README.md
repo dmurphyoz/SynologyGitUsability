@@ -4,7 +4,7 @@ This is based on to simplify create Git repositories on Synology.
 
 After configuring Git on synology this will make it easier to work with.
 
-To learn how to configure it look at the following excellent article by @walkerjeffd  [https://gist.github.com/walkerjeffd/374750c366605cd5123d](url)
+To learn how to configure it look at the following excellent article by @walkerjeffd  [Github GIST article](https://gist.github.com/walkerjeffd/374750c366605cd5123d)
 
 Thank you to @walkerjeffd.
 
