@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		6E00685922552FC700156121 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6EA947162255254000572601 /* no-interactive-login.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "no-interactive-login.sh"; sourceTree = "<group>"; };
 		6EA947172255256A00572601 /* help.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = help.sh; sourceTree = "<group>"; };
 		6EA947182255259D00572601 /* git-create-repository.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "git-create-repository.sh"; sourceTree = "<group>"; };
@@ -18,6 +19,7 @@
 		6EA9470F225524DC00572601 = {
 			isa = PBXGroup;
 			children = (
+				6E00685922552FC700156121 /* README.md */,
 				6EA9471A2255271300572601 /* FixGSCpermissions.sh */,
 				6EA947192255262800572601 /* CreateDirectoryGSC.sh */,
 				6EA947182255259D00572601 /* git-create-repository.sh */,
