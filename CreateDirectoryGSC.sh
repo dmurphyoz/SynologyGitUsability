@@ -5,6 +5,7 @@
 #
 #  Created by Damian Murphy on 4/4/19.
 #  
+GITUSER=gituser
 
-mkdir ~gituser/git-shell-commands
+mkdir ~$GITUSER/git-shell-commands
 FixGSCpermissions.sh
