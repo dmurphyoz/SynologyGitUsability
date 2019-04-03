@@ -6,10 +6,23 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXFileReference section */
+		6EA947162255254000572601 /* no-interactive-login.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "no-interactive-login.sh"; sourceTree = "<group>"; };
+		6EA947172255256A00572601 /* help.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = help.sh; sourceTree = "<group>"; };
+		6EA947182255259D00572601 /* git-create-repository.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "git-create-repository.sh"; sourceTree = "<group>"; };
+		6EA947192255262800572601 /* CreateDirectoryGSC.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CreateDirectoryGSC.sh; sourceTree = "<group>"; };
+		6EA9471A2255271300572601 /* FixGSCpermissions.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = FixGSCpermissions.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		6EA9470F225524DC00572601 = {
 			isa = PBXGroup;
 			children = (
+				6EA9471A2255271300572601 /* FixGSCpermissions.sh */,
+				6EA947192255262800572601 /* CreateDirectoryGSC.sh */,
+				6EA947182255259D00572601 /* git-create-repository.sh */,
+				6EA947172255256A00572601 /* help.sh */,
+				6EA947162255254000572601 /* no-interactive-login.sh */,
 			);
 			sourceTree = "<group>";
 		};
